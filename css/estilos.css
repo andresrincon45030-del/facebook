@@ -3,6 +3,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
 }
+
 #barra-superior {
   height: 60px;
   background-color: rgb(255, 255, 255);
@@ -11,16 +12,19 @@ body {
   padding: 0 20px;
   justify-content: space-between;
 }
+
 .barra {
   display: flex;
   align-items: center;
   gap: 10px;
 }
+
 #logo-facebook {
   width: 50px;
   height: 50px;
   border-radius: 50%;
 }
+
 #buscador {
   width: 240px;
   height: 25px;
@@ -30,63 +34,75 @@ body {
   text-align: center;
   padding-top: 5px;
 }
+
 .icono-cuadrado {
   width: 90px;
   height: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 20%;
 }
+
 .icono-circular {
   width: 50px;
   height: 50px;
   background-color: rgb(255, 255, 255);
   border-radius: 50%;
 }
+
 #grid-principal {
   display: grid;
   grid-template-columns: 250px 1fr 250px;
   gap: 20px;
   padding: 20px;
 }
+
 #columna-izquierda {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .menu-izquierdo {
   height: 40px;
   border-radius: 8px;
 }
+
 #columna-central {
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
+
 #crear-publicacion {
   height: 60px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
+
 #historias {
   display: flex;
   gap: 10px;
 }
+
 .historia {
-  width: 120px;
+  flex: 1;
   height: 200px;
   background-color: rgb(195, 195, 195);
   border-radius: 10px;
 }
+
 #publicacion {
   height: 235px;
   background-color: rgb(255, 255, 255);
   border-radius: 10px;
 }
+
 #columna-derecha {
   display: flex;
   flex-direction: column;
   gap: 15px;
 }
+
 .contacto {
   height: 40px;
   background-color: rgb(235, 235, 235);
