@@ -2,75 +2,119 @@
 <html lang="es">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Facebook</title>
     <link rel="stylesheet" href="css/estilos.css" />
   </head>
-
   <body>
-    <div id="barra-superior">
-      <div class="barra">
-        <div id="logo-facebook">
-          <img src="img/logo de facebook.png" />
-        </div>
-        <div id="buscador">Buscar en Facebook</div>
+    <header class="header">
+      <div class="header-izquierda">
+        <span class="logo"><img src="img/logo de facebook.png" /></span>
+        <input class="buscar" type="text" placeholder="Buscar en Facebook" />
       </div>
 
-      <div class="barra">
-        <div class="icono-cuadrado"><img src="img/casa.png" /></div>
-        <div class="icono-cuadrado"><img src="img/contacto.png" /></div>
-        <div class="icono-cuadrado"><img src="img/videos.png" /></div>
-        <div class="icono-cuadrado"><img src="img/marketplace.png" /></div>
-        <div class="icono-cuadrado"><img src="img/juegos.png" /></div>
-      </div>
+      <nav class="header-centro">
+        <span class="icon"><img src="img/casa.png" /></span>
+        <span class="icon"><img src="img/videos.png" /></span>
+        <span class="icon"><img src="img/contacto.png" /></span>
+        <span class="icon"><img src="img/marketplace.png" /></span>
+        <span class="icon"><img src="img/juegos.png" /></span>
+      </nav>
 
-      <div class="barra">
-        <div class="icono-circular"><img src="img/cuadros.png" /></div>
-        <div class="icono-circular"><img src="img/mensajes.png" /></div>
-        <div class="icono-circular"><img src="img/campana.png" /></div>
-        <div class="icono-circular"><img src="img/usuario.png" /></div>
+      <div class="header-derecha">
+        <span class="perfil header-perfil"><img src="img/cuadros.png" /></span>
+        <span class="perfil header-perfil"><img src="img/mensajes.png" /></span>
+        <span class="perfil header-perfil"><img src="img/campana.png" /></span>
+        <span class="perfil header-perfil"><img src="img/usuario.png" /></span>
       </div>
-    </div>
+    </header>
 
-    <div id="grid-principal">
-      <div id="columna-izquierda">
-        <div class="menu-izquierdo">Andres Parra</div>
-        <div class="menu-izquierdo">Amigos</div>
-        <div class="menu-izquierdo">Recuerdos</div>
-        <div class="menu-izquierdo">Guardado</div>
-        <div class="menu-izquierdo">Grupos</div>
-        <div class="menu-izquierdo">Reels</div>
-        <div class="menu-izquierdo">Marketplace</div>
-        <div class="menu-izquierdo">Feeds</div>
-        <div class="menu-izquierdo">Eventos</div>
-        <div class="menu-izquierdo">Administrador de Anuncios</div>
-      </div>
+    <main class="contenedor">
+      <aside class="izquierda">
+        <ul>
+          <li><span class="perfil"></span> Andres Rincon</li>
+          <li><span class="perfil"></span> Amigos</li>
+          <li><span class="perfil"></span> Recuerdos</li>
+          <li><span class="perfil"></span> Guardado</li>
+          <li><span class="perfil"></span> Grupos</li>
+          <li><span class="perfil"></span> Reels</li>
+          <li><span class="perfil"></span> Marketplace</li>
+          <li><span class="perfil"></span> Feeds</li>
+          <li><span class="perfil"></span> Eventos</li>
+        </ul>
+      </aside>
 
-      <div id="columna-central">
-        <div id="crear-publicacion"></div>
-        <div id="historias">
-          <div class="historia"></div>
-          <div class="historia"></div>
-          <div class="historia"></div>
-          <div class="historia"></div>
-          <div class="historia"></div>
-          <div class="historia"></div>
-        </div>
+      <section class="centro">
+        <article class="crear-post">
+          <span class="perfil-pensando"><img src="img/foto personal.png"></span>
+          <input
+            class="pensando"
+            type="text"
+            placeholder="¿Que estas pensando?"
+          />
+          <span class="accion"><img src="img/video.png"></span>
+          <span class="accion"><img src="img/galeria.png"></span>
+          <span class="accion"><img src="img/emoji.png"></span>
+        </article>
 
-        <div id="publicacion"></div>
-      </div>
+        <section class="historias">
+          <span class="historia"></span>
+          <span class="historia"></span>
+          <span class="historia"></span>
+          <span class="historia"></span>
+          <span class="historia"></span>
+          <span class="historia"></span>
+        </section>
 
-      <div id="columna-derecha">
-        <div class="contacto">Meta AI</div>
-        <div class="contacto">Valen Barreto</div>
-        <div class="contacto">Adrian Rodriguez</div>
-        <div class="contacto">Alejandro Gonzales</div>
-        <div class="contacto">Luisa Bonilla</div>
-        <div class="contacto">Paula Andrea</div>
-        <div class="contacto">Isabela Sabogal</div>
-        <div class="contacto">Jeferson Quintero</div>
-        <div class="contacto">Deissy Valencia</div>
-        <div class="contacto">Juan Camilo Maldonado</div>
-      </div>
-    </div>
+        <section class="feed">
+          <article class="post">
+            <div class="post-top">
+              <span class="perfil"></span>
+              <div class="info">
+                <p>Stories</p>
+                <small>Hace 1h</small>
+              </div>
+            </div>
+            <div class="post-img"><img src="img/deudas.jpg"></div>
+          </article>
+
+          <article class="post">
+            <div class="post-top">
+              <span class="perfil"></span>
+              <div class="info">
+                <p>Grupo</p>
+                <small>Hace 3h</small>
+              </div>
+            </div>
+            <div class="post-img"><img src="img/gato.jpg"></div>
+          </article>
+
+          <article class="post">
+            <div class="post-top">
+              <span class="perfil"></span>
+              <div class="info">
+                <p>Memes Diarios</p>
+                <small>Hace 5h</small>
+              </div>
+            </div>
+            <div class="post-img"><img src="img/meme.jpg"></div>
+          </article>
+        </section>
+      </section>
+
+      <aside class="derecha">
+        <ul>
+          <li><span class="perfil"></span> Meta AI</li>
+          <li><span class="perfil"></span> Valen Barreto</li>
+          <li><span class="perfil"></span> Adrian Rodriguez</li>
+          <li><span class="perfil"></span> Alejandro Gonzales</li>
+          <li><span class="perfil"></span> Luisa Bonilla</li>
+          <li><span class="perfil"></span> Paula Andrea</li>
+          <li><span class="perfil"></span> Isabela Sabogal</li>
+          <li><span class="perfil"></span> Jeferson Quintero</li>
+          <li><span class="perfil"></span> Juan Camilo</li>
+        </ul>
+      </aside>
+    </main>
   </body>
 </html>
